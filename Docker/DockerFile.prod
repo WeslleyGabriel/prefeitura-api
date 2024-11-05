@@ -14,7 +14,7 @@ FROM maven:3-eclipse-temurin-21-alpine
 
 WORKDIR /app
 
-COPY --from=build \prefeitura-api\target\prefeitura-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build target/prefeitura-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
